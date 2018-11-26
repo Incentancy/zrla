@@ -12,6 +12,9 @@
 - findALl():查询所有用户，并将其以JSON形式返回;
     - 访问方法名"/findall"，访问方式：GET
 - findOne(String user_id):按user_id查询用户，并以JSON形式返回.
+    - 访问方法名"/findbyid"，访问方式：GET
+- queryByUserLevel(int user_level):按user_level查询用户，并以JSON形式返回.
+    - 访问方法名"/findbylevel"，访问方式：GET
 
 ## Student
 - save(Student student):传递一个Student类参数，并将其保存在数据库中。若成功，返回"SUCCESS";
@@ -53,7 +56,7 @@
 - findOne(long score_id):按score_id查询成绩，并以JSON形式返回.
     - 访问方法名"/findbyid"，访问方式：GET
 
-## Checkio
+## Checkio(访问前缀为"/check")
 - save(Checkio checkio):传递一个Checkio参数，并将其保存在数据库中。若成功，返回"SUCCESS";
     - 访问方法名"/save"，访问方式：POST
 - delete(long check_id):删除指定check_id的签到信息。若成功，返回"SUCCESS";
@@ -72,4 +75,5 @@
     - 访问方法名"/findall"，访问方式：GET
 - findOne(long bull_id):按bull_id查询公告，并以JSON形式返回.
     - 访问方法名"/findbyid"，访问方式：GET
-
+- findBulletinByLabId(int labId):按labId查询公告，并以JSON形式返回.
+    - 访问方法名"/findbylabid"，访问方式：GET

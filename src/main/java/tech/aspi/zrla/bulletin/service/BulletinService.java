@@ -40,4 +40,11 @@ public class BulletinService {
     public Bulletin findOne(int bull_id){
         return bulletinRepository.findOne(bull_id);
     }
+
+    // 按实验室Id查询公告数据
+    @Transactional
+    public Iterable<Bulletin> findBulletinByLabId(int labId) {
+        return bulletinRepository.findBulletinByLabId(labId);
+    }
+
 }

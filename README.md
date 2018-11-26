@@ -26,11 +26,11 @@
 ## Lab
 - save(Lab lab):传递一个Lab类参数，并将其保存在数据库中。若成功，返回"SUCCESS";
     - 访问方法名"/save"，访问方式：POST
-- delete(int lab_id):删除指定lab_id的实验室。若成功，返回"SUCCESS";
+- delete(int labId):删除指定lab_id的实验室。若成功，返回"SUCCESS";
     - 访问方法名"/delete"，访问方式：POST
 - findALl():查询所有实验室，并将其以JSON形式返回;
     - 访问方法名"/findall"，访问方式：GET
-- findOne(int lab_id):按lab_id查询用户，并以JSON形式返回.
+- findOne(int labId):按lab_id查询用户，并以JSON形式返回.
     - 访问方法名"/findbyid"，访问方式：GET
 
 ## Subject

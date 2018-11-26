@@ -39,4 +39,9 @@ public class BulletinController {
     public Bulletin findOne(int bull_id){
         return bulletinService.findOne(bull_id);
     }
+
+    @GetMapping("/findbylabid")
+    public Iterable<Bulletin> findBulletinByLabId(int labId) {
+        return bulletinService.findBulletinByLabId(labId);
+    }
 }

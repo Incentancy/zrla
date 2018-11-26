@@ -1,11 +1,9 @@
 package tech.aspi.zrla.bulletin.model;
 
-import org.springframework.format.annotation.DateTimeFormat;
-
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Entity
@@ -26,6 +24,17 @@ public class Bulletin {
     private String bull_img;            // 存储图像路径
 
     private String bull_markdown_path;  // 存储markdown路径
+
+    @Column(name = "lab_id")
+    private int labId;                 // 实验室id
+
+    public int getLabId() {
+        return labId;
+    }
+
+    public void setLabId(int labId) {
+        this.labId = labId;
+    }
 
     public int getBull_id() {
         return bull_id;
